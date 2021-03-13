@@ -5,9 +5,9 @@ import aio_pika
 from source import settings
 
 
-async def create(url):
+async def create(url:str):
     """Creates connections to specified rabbit server"""
-    connection = await aio_pika.connect_robust(url)
+    connection = await aio_pika.connect(url)
     return connection
 
 loop = asyncio.get_event_loop()

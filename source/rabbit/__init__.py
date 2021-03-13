@@ -1,1 +1,1 @@
-from source.rabbit import connections
+from source.rabbit import connections, consumer
