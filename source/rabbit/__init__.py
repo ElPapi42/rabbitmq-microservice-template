@@ -1,1 +1,5 @@
-from source.rabbit import connections, consumer
+from source.rabbit import (
+    connections,
+    consumer,
+    router
+)
